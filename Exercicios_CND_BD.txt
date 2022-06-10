@@ -20,15 +20,15 @@ MariaDB [exemplo_musica]> SELECT COUNT(*) FROM ARTISTAS;
 
 3-Quais são os planos, valores e limites de download?
 
-MariaDB [exemplo_musica]> SELECT * FROM PLANOS;
-+----+-----------+-------+--------+---------------------+---------------------+
-| id | descricao | valor | limite | created             | modified            |
-+----+-----------+-------+--------+---------------------+---------------------+
-|  1 | Light     | 29.99 |    100 | 2019-10-18 11:21:08 | 2019-10-18 11:21:08 |
-|  2 | Sem nome  | 39.99 |    500 | 2019-10-18 11:21:31 | 2019-10-18 11:21:31 |
-|  3 | Full      | 49.99 | 999999 | 2019-10-18 11:22:00 | 2019-10-18 11:22:00 |
-+----+-----------+-------+--------+---------------------+---------------------+
-3 rows in set (0.001 sec)
+MariaDB [exemplo_musica]> SELECT DESCRICAO, VALOR, LIMITE FROM PLANOS;
++-----------+-------+--------+
+| DESCRICAO | VALOR | LIMITE |
++-----------+-------+--------+
+| Light     | 29.99 |    100 |
+| Sem nome  | 39.99 |    500 |
+| Full      | 49.99 | 999999 |
++-----------+-------+--------+
+3 rows in set (0.000 sec)
 
 4-Liste todos os artistas que tenham como inicial a letra 'A".
 
